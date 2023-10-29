@@ -28,7 +28,7 @@ MySQL은 숫자없이 VARCHAR로 사용. <br><br>
 숫자형 데이터타입에 대해 오라클은 SYSDATE를 사용하는 반면, MySQL은 DATETIME으로 사용.<br><br><br>
 
 ## alter
-# 컬럼 추가 (Add) <br>
+컬럼 추가 (Add) <br>
 ALTER TABLE table_name ADD COLUMN ex_column varchar(32) NOT NULL; <br><br>
 
 컬럼 변경 (Modify) <br>
