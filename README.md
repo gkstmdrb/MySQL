@@ -48,3 +48,4 @@ ALTER TABLE table_name1 RENAME table_name2; <br><br><br>
 ``` MySQL
 DROP TABLE mytable;
 ```
+DROP TABLE [테이블명]
