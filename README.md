@@ -17,17 +17,14 @@ CREATE TABLE mytable (
     name VARCHAR(50)
 );
 ```
-1. 가변형 캐릭터 데이터타입 [VARCHAR2 vs VARCHAR] <br><br>
-
+1. 가변형 캐릭터 데이터타입 [VARCHAR2 vs VARCHAR] <br>
 가변형 캐릭터타입인 VARCHAR에 대해 오라클은 VARCHAR 뒤에 숫자2를 사용하는 반면, <br>
 MySQL은 숫자없이 VARCHAR로 사용. <br><br>
 
-2. 숫자형 데이터타입 [NUMBER vs INT]<br><br>
-
+2. 숫자형 데이터타입 [NUMBER vs INT]<br>
 숫자형 데이터타입에 대해 오라클은 NUMBER를 사용하는 반면, MySQL은 INT로 사용.<br><br>
 
-3. 날짜형 데이터타입 [SYSDATE vs DATETIME]<br><br>
-
+3. 날짜형 데이터타입 [SYSDATE vs DATETIME]<br>
 숫자형 데이터타입에 대해 오라클은 SYSDATE를 사용하는 반면, MySQL은 DATETIME으로 사용.<br><br><br>
 
 ## alter
