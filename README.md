@@ -2,6 +2,8 @@
 ## MySQL과 Oracle의 차이점
 MySQL은 오픈 소스이며 무료로 사용 가능하지만 Oracle은 상용 제품으로 라이센스 비용이 발생한다. <br><br>
 
+쿼리문 입력방식은 서로 크게 다르지 않으며 주로 함수명이 다르다. <br><br>
+
 ## create
 Oracle
 ``` Oracle
