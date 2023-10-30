@@ -29,19 +29,19 @@ MySQL은 숫자없이 VARCHAR로 사용. <br><br>
 
 ## alter
 컬럼 추가 (Add) <br>
-ALTER TABLE table_name ADD COLUMN ex_column varchar(32) NOT NULL; <br><br>
+ALTER TABLE [테이블명] ADD COLUMN [컬럼명] varchar(32) NOT NULL; <br><br>
 
 컬럼 변경 (Modify) <br>
-ALTER TABLE table_name MODIFY COLUMN ex_column varchar(16) NULL; <br><br>
+ALTER TABLE [테이블명] MODIFY COLUMN [컬럼명] varchar(16) NULL; <br><br>
 
 컬럼 이름까지 변경 (Change) <br>
-ALTER TABLE table_name CHANGE COLUMN ex_column ex_column2 varchar(16) NULL; <br><br>
+ALTER TABLE [테이블명] CHANGE COLUMN [컬럼명] [바꿀 컬럼명] varchar(16) NULL; <br><br>
 
 컬럼 삭제 (Drop) <br>
-ALTER TABLE table_name DROP COLUMN ex_column; <br><br>
+ALTER TABLE [테이블명] DROP COLUMN [컬럼명]; <br><br>
 
 테이블 이름 변경 (RENAME) <br>
-ALTER TABLE table_name1 RENAME table_name2; <br><br><br>
+ALTER TABLE [테이블명] RENAME [바꿀 테이블명]; <br><br><br>
 
 
 ## Drop
