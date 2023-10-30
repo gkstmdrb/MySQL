@@ -19,13 +19,13 @@ CREATE TABLE mytable (
 ```
 1. 가변형 캐릭터 데이터타입 [VARCHAR2 vs VARCHAR] <br>
 가변형 캐릭터타입인 VARCHAR에 대해 오라클은 VARCHAR 뒤에 숫자2를 사용하는 반면, <br>
-MySQL은 숫자없이 VARCHAR로 사용. <br><br>
+MySQL은 숫자없이 VARCHAR로 사용한다. <br><br>
 
 2. 숫자형 데이터타입 [NUMBER vs INT]<br>
-숫자형 데이터타입에 대해 오라클은 NUMBER를 사용하는 반면, MySQL은 INT로 사용.<br><br>
+숫자형 데이터타입에 대해 오라클은 NUMBER를 사용하는 반면, MySQL은 INT로 사용한다.<br><br>
 
 3. 날짜형 데이터타입 [SYSDATE vs DATETIME]<br>
-숫자형 데이터타입에 대해 오라클은 SYSDATE를 사용하는 반면, MySQL은 DATETIME으로 사용.<br><br><br>
+숫자형 데이터타입에 대해 오라클은 SYSDATE를 사용하는 반면, MySQL은 DATETIME으로 사용한다.<br><br><br>
 
 ## alter
 컬럼 추가 (Add) <br>
@@ -48,4 +48,12 @@ ALTER TABLE [테이블명] RENAME [바꿀 테이블명]; <br><br><br>
 ``` MySQL
 DROP TABLE mytable;
 ```
-DROP TABLE [테이블명]
+DROP TABLE [테이블명] <br><br><br>
+
+## INDEX
+CREATE INDEX [인덱스이름] <br>
+ON [테이블이름] (필드이름1, 필드이름2, ...) <br><br>
+
+### INDEX 조회
+SHOW INDEX <br>
+FROM [테이블이름] <br><br>
