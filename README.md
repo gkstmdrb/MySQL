@@ -43,7 +43,13 @@ ALTER TABLE [테이블명] DROP COLUMN [컬럼명]; <br><br>
 테이블 이름 변경 (RENAME) <br>
 ALTER TABLE [테이블명] RENAME [바꿀 테이블명]; <br><br><br>
 
+## INSERT
+1. INSERT INTO [테이블명](필드이름1, 필드이름2, 필드이름3, ...) <br>
+   VALUES (데이터값1, 데이터값2, 데이터값3, ...) <br><br>
 
+2. INSERT INTO [테이블명] <br>
+   VALUES (데이터값1, 데이터값2, 데이터값3, ...) <br><br><br>
+   
 ## Drop
 ``` MySQL
 DROP TABLE mytable;
@@ -51,9 +57,13 @@ DROP TABLE mytable;
 DROP TABLE [테이블명] <br><br><br>
 
 ## INDEX
-CREATE INDEX [인덱스이름] <br>
-ON [테이블이름] (필드이름1, 필드이름2, ...) <br><br>
+CREATE INDEX [인덱스명] <br>
+ON [테이블명] (필드명1, 필드명2, ...) <br><br>
 
 ### INDEX 조회
 SHOW INDEX <br>
-FROM [테이블이름] <br><br>
+FROM [테이블명] <br><br>
+
+### UNIQUE INDEX 생성
+CREATE UNIQUE INDEX [인덱스명] <br>
+ON [테이블명] (필드명1, 필드명2, ...) <br><br>
