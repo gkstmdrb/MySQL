@@ -89,3 +89,42 @@ FROM 테이블이름 <br>
 [WHERE 조건] <br><br><br>
 
 
+# 제약조건
+MySQL에서 사용할 수 있는 제약 조건은 다음과 같습니다. <br><br>
+
+1. NOT NULL <br>
+2. UNIQUE <br>
+3. PRIMARY KEY <br>
+4. FOREIGN KEY <br>
+5. DEFAULT <br><br>
+
+## NOT NULL
+CREATE 문으로 테이블을 생성할 때 해당 필드의 타입 뒤에 NOT NULL을 명시하면, 해당 필드는 NULL 값을 가질 수 없다. <br><br>
+
+CREATE TABLE 테이블이름 (필드이름 필드타입 NOT NULL, ...) <br><br>
+
+## UNIQUE
+UNIQUE 제약 조건을 설정하면, 해당 필드는 서로 다른 값을 가져야 한다. <br>
+즉, 이 제약 조건이 설정된 필드는 중복된 값을 저장할 수 없다. <br><br>
+
+1. CREATE TABLE 테이블이름 (필드명 필드타입 UNIQUE, ...) <br><br>
+
+2. CREATE TABLE 테이블이름 (필드이름 필드타입, ..., [CONSTRAINT 제약조건이름] UNIQUE (필드이름)) <br><br><br>
+
+
+## PRIMARY KEY
+PRIMARY KEY 제약 조건을 설정하면, 해당 필드는 NOT NULL과 UNIQUE 제약 조건의 특징을 모두 가진다. <br><br>
+
+1. CREATE TABLE 테이블이름 (필드이름 필드타입 PRIMARY KEY, ...) <br><br>
+
+2. CREATE TABLE 테이블이름 (필드이름 필드타입, ..., [CONSTRAINT 제약조건이름] PRIMARY KEY (필드이름)) <br><br><br>
+
+
+## FOREIGN KEY
+FOREIGN KEY 제약 조건을 설정한 필드는 외래 키라고 부르며, 한 테이블을 다른 테이블과 연결해주는 역할을 한다. <br>
+외래 키가 설정된 테이블에 레코드를 입력하면, 기준이 되는 테이블의 내용을 참조해서 레코드가 입력된다. <br>
+즉, FOREIGN KEY 제약 조건은 하나의 테이블을 다른 테이블에 의존하게 만든다. <br><br>
+
+CREATE TABLE 테이블이름 (필드이름 필드타입, ..., [CONSTRAINT 제약조건이름] FOREIGN KEY (필드이름) REFERENCES 테이블이름 (필드이름)) <br><br><br>
+
+
