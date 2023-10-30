@@ -63,14 +63,11 @@ WHERE 필드명=데이터값 <br><br><br>
 DELETE FROM 테이블명 <br>
 WHERE 필드명=데이터값 <br><br>
 
-만약 WHERE 절을 생략하면, 해당 테이블에 저장된 모든 데이터가 삭제된다. <br>
+### 만약 WHERE 절을 생략하면, 해당 테이블에 저장된 모든 데이터가 삭제된다.
 DELETE FROM 테이블이름; <br><br><br>
 
 
 ## Drop
-``` MySQL
-DROP TABLE mytable;
-```
 DROP TABLE [테이블명] <br><br><br>
 
 ## INDEX
@@ -83,4 +80,12 @@ FROM [테이블명] <br><br>
 
 ### UNIQUE INDEX 생성
 CREATE UNIQUE INDEX [인덱스명] <br>
-ON [테이블명] (필드명1, 필드명2, ...) <br><br>
+ON [테이블명] (필드명1, 필드명2, ...) <br><br><br>
+
+
+## SELECT
+SELECT 필드이름 <br>
+FROM 테이블이름 <br>
+[WHERE 조건] <br><br><br>
+
+
