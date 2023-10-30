@@ -4,7 +4,7 @@ MySQL은 오픈 소스이며 무료로 사용 가능하지만 Oracle은 상용 �
 
 쿼리문 입력방식은 서로 크게 다르지 않으며 주로 함수명이 다르다. <br><br>
 
-## create
+## CREATE
 Oracle
 ``` Oracle
 CREATE TABLE mytable (
@@ -29,7 +29,7 @@ MySQL은 숫자없이 VARCHAR로 사용한다. <br><br>
 3. 날짜형 데이터타입 [SYSDATE vs DATETIME]<br>
 숫자형 데이터타입에 대해 오라클은 SYSDATE를 사용하는 반면, MySQL은 DATETIME으로 사용한다.<br><br><br>
 
-## alter
+## ALTER
 컬럼 추가 (Add) <br>
 ALTER TABLE [테이블명] ADD COLUMN [컬럼명] varchar(32) NOT NULL; <br><br>
 
