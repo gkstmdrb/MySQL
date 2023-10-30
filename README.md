@@ -44,12 +44,27 @@ ALTER TABLE [테이블명] DROP COLUMN [컬럼명]; <br><br>
 ALTER TABLE [테이블명] RENAME [바꿀 테이블명]; <br><br><br>
 
 ## INSERT
-1. INSERT INTO [테이블명](필드이름1, 필드이름2, 필드이름3, ...) <br>
+1. INSERT INTO [테이블명](필드명1, 필드명2, 필드명3, ...) <br>
    VALUES (데이터값1, 데이터값2, 데이터값3, ...) <br><br>
 
 2. INSERT INTO [테이블명] <br>
    VALUES (데이터값1, 데이터값2, 데이터값3, ...) <br><br><br>
-   
+
+
+## UPDATE
+UPDATE 테이블명 <br>
+SET 필드명1=데이터값1, 필드명2=데이터값2, ... <br>
+WHERE 필드명=데이터값 <br><br><br>
+
+
+## DELETE
+DELETE FROM 테이블명 <br>
+WHERE 필드명=데이터값 <br><br>
+
+만약 WHERE 절을 생략하면, 해당 테이블에 저장된 모든 데이터가 삭제된다. <br>
+DELETE FROM 테이블이름; <br><br><br>
+
+
 ## Drop
 ``` MySQL
 DROP TABLE mytable;
